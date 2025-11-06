@@ -52,6 +52,55 @@
       "gemini": "Gemini"
     }
   },
+  "pricing": {
+    "title": "Paket Fleksibel untuk Setiap Institusi",
+    "subtitle": "Pilih paket yang paling sesuai dengan kebutuhan Anda. Dapatkan 2 bulan gratis dengan tagihan tahunan.",
+    "monthly": "Bulanan",
+    "yearly": "Tahunan",
+    "save": "Hemat 20%",
+    "user_month": "pengguna/bulan",
+    "user_year": "pengguna/tahun",
+    "get_started": "Mulai",
+    "contact_sales": "Hubungi Penjualan",
+    "most_popular": "Paling Populer",
+    "plans": {
+      "basic": {
+        "title": "Dasar",
+        "description": "Untuk tim kecil dan pendidik individu yang baru memulai.",
+        "features": [
+          "Aplikasi inti Google Workspace",
+          "Rapat video 100 peserta",
+          "Penyimpanan cloud 30 GB per pengguna",
+          "Keamanan dan manajemen standar",
+          "Dukungan komunitas"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "description": "Untuk institusi berkembang yang membutuhkan lebih banyak kolaborasi dan kontrol.",
+        "features": [
+          "Semua di paket Dasar, ditambah:",
+          "Rapat video 250 peserta + rekaman",
+          "Penyimpanan gabungan 2 TB per pengguna",
+          "Keamanan dan analitik yang ditingkatkan",
+          "Laporan Orisinalitas",
+          "Dukungan online 24/7"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "Untuk organisasi besar yang memerlukan keamanan dan kepatuhan tingkat lanjut.",
+        "features": [
+          "Semua di paket Pro, ditambah:",
+          "Rapat video 500 peserta + streaming langsung",
+          "Penyimpanan gabungan 5 TB per pengguna",
+          "Kontrol keamanan, kepatuhan, dan data tingkat lanjut",
+          "Termasuk AppSheet Core",
+          "Penasihat teknis khusus"
+        ]
+      }
+    }
+  },
   "footer": {
     "tagline": "Memberdayakan pendidikan melalui teknologi inovatif dan solusi berbasis AI.",
     "product": "Produk",

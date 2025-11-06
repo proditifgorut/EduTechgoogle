@@ -1,20 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Menu, X, Plus, BrainCircuit, LogOut } from 'lucide-react';
-import { useTranslations } from '../contexts/LanguageContext';
-import LanguageSwitcher from './LanguageSwitcher';
 import { useAuth } from '../contexts/AuthContext';
 import { GoogleLogin, CredentialResponse } from '@react-oauth/google';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
-  const { t } = useTranslations();
   const { profile, login, logout } = useAuth();
   const profileMenuRef = useRef<HTMLDivElement>(null);
 
   const navButtons = [
-    { label: t('header.workspace'), href: '#' },
-    { label: t('header.cloud'), href: '#' },
+    { label: 'Google Workspace for Education', href: '/workspace' },
+    { label: 'Google Cloud', href: '/cloud' },
   ];
 
   const handleLoginSuccess = (credentialResponse: CredentialResponse) => {
@@ -41,28 +39,35 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-lg border-b border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
               <BrainCircuit size={18} className="text-white" />
             </div>
-            <span className="text-white font-semibold text-lg">{t('header.title')}</span>
-          </div>
+            <span className="text-white font-semibold text-lg">EduTech</span>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-2">
             {navButtons.map(item => (
-              <a key={item.label} href={item.href} className="text-gray-300 hover:bg-white/10 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">
+              <NavLink 
+                key={item.label} 
+                to={item.href} 
+                className={({ isActive }) =>
+                  `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive ? 'bg-white/10 text-white' : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                  }`
+                }
+              >
                 {item.label}
-              </a>
+              </NavLink>
             ))}
-             <a href="#" className="bg-white/10 hover:bg-white/20 text-white transition-colors px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-1">
+             <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white transition-colors px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-1">
                 <Plus size={16} />
-                <span>{t('header.gemini')}</span>
+                <span>+ Gemini</span>
               </a>
           </div>
 
           <div className="flex items-center space-x-4">
              <div className="hidden md:flex items-center space-x-4">
-                <LanguageSwitcher />
                 {profile ? (
                   <div className="relative" ref={profileMenuRef}>
                     <button onClick={() => setIsProfileMenuOpen(!isProfileMenuOpen)} className="flex items-center space-x-2">
@@ -105,14 +110,17 @@ const Header: React.FC = () => {
           <div className="md:hidden py-4 border-t border-white/10">
             <nav className="flex flex-col space-y-2">
               {navButtons.map(item => (
-                <a key={item.label} href={item.href} className="text-gray-300 hover:bg-white/10 hover:text-white transition-colors block px-3 py-2 rounded-md text-base font-medium">{item.label}</a>
+                <NavLink key={item.label} to={item.href} onClick={() => setIsMenuOpen(false)} className={({ isActive }) =>
+                  `block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                    isActive ? 'bg-white/10 text-white' : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                  }`
+                }>{item.label}</NavLink>
               ))}
-              <a href="#" className="text-gray-300 hover:bg-white/10 hover:text-white transition-colors block px-3 py-2 rounded-md text-base font-medium flex items-center space-x-1">
+              <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:bg-white/10 hover:text-white transition-colors block px-3 py-2 rounded-md text-base font-medium flex items-center space-x-1">
                 <Plus size={16} />
-                <span>{t('header.gemini')}</span>
+                <span>+ Gemini</span>
               </a>
               <div className="border-t border-white/10 pt-4 mt-2 space-y-4">
-                 <LanguageSwitcher />
                  {profile ? (
                    <div className="px-3 py-2">
                       <div className="flex items-center space-x-3 mb-3">
@@ -123,7 +131,7 @@ const Header: React.FC = () => {
                         </div>
                       </div>
                       <button
-                        onClick={logout}
+                        onClick={() => { logout(); setIsMenuOpen(false); }}
                         className="w-full text-left flex items-center space-x-2 px-3 py-2 text-base font-medium text-red-400 hover:bg-white/10 rounded-md"
                       >
                        <LogOut size={18} />

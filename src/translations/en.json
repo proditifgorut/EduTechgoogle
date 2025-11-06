@@ -52,6 +52,55 @@
       "gemini": "Gemini"
     }
   },
+  "pricing": {
+    "title": "Flexible Plans for Every Institution",
+    "subtitle": "Choose the plan that best fits your needs. Get 2 months free with annual billing.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save 20%",
+    "user_month": "user/month",
+    "user_year": "user/year",
+    "get_started": "Get Started",
+    "contact_sales": "Contact Sales",
+    "most_popular": "Most Popular",
+    "plans": {
+      "basic": {
+        "title": "Basic",
+        "description": "For small teams and individual educators getting started.",
+        "features": [
+          "Core Google Workspace apps",
+          "100 participant video meetings",
+          "30 GB cloud storage per user",
+          "Standard security and management",
+          "Community support"
+        ]
+      },
+      "pro": {
+        "title": "Pro",
+        "description": "For growing institutions that need more collaboration and control.",
+        "features": [
+          "Everything in Basic, plus:",
+          "250 participant video meetings + recording",
+          "2 TB pooled storage per user",
+          "Enhanced security and analytics",
+          "Originality reports",
+          "24/7 online support"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "For large organizations requiring advanced security and compliance.",
+        "features": [
+          "Everything in Pro, plus:",
+          "500 participant video meetings + live streaming",
+          "5 TB pooled storage per user",
+          "Advanced security, compliance, and data controls",
+          "AppSheet Core included",
+          "Dedicated technical advisor"
+        ]
+      }
+    }
+  },
   "footer": {
     "tagline": "Empowering education through innovative technology and AI-driven solutions.",
     "product": "Product",

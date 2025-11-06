@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrainCircuit, FilePieChart, Shield } from 'lucide-react';
-import { useTranslations } from '../contexts/LanguageContext';
 
 interface InfoCardProps {
   icon: React.ReactNode;
@@ -26,25 +25,23 @@ const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, color }) 
 };
 
 const LeftSidebar: React.FC = () => {
-  const { t } = useTranslations();
-
   const cards = [
     {
       icon: <BrainCircuit size={24} className="text-blue-400" />,
-      title: t('sidebar.empowerTitle'),
-      description: t('sidebar.empowerDesc'),
+      title: 'Empower',
+      description: 'Empower your faculty, staff, and students with intuitive tools.',
       color: 'hover:border-blue-500/50'
     },
     {
       icon: <FilePieChart size={24} className="text-red-400" />,
-      title: t('sidebar.optimizeTitle'),
-      description: t('sidebar.optimizeDesc'),
+      title: 'Optimize',
+      description: 'Optimize your tech with data insights and simple management.',
       color: 'hover:border-red-500/50'
     },
     {
       icon: <Shield size={24} className="text-green-400" />,
-      title: t('sidebar.protectTitle'),
-      description: t('sidebar.protectDesc'),
+      title: 'Protect',
+      description: 'Protect your data with secure, scalable, and compliant infrastructure.',
       color: 'hover:border-green-500/50'
     },
   ];

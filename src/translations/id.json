@@ -1,0 +1,73 @@
+{
+  "header": {
+    "title": "EduTech",
+    "signIn": "Masuk",
+    "getStarted": "Mulai",
+    "workspace": "Google Workspace untuk Pendidikan",
+    "cloud": "Google Cloud",
+    "gemini": "+ Gemini"
+  },
+  "main": {
+    "title_line1": "Solusi teknologi pendidikan",
+    "title_line2": "full-stack",
+    "experience": "Pengalaman: Kolaborasi dan produktivitas"
+  },
+  "sidebar": {
+    "empowerTitle": "Berdayakan",
+    "empowerDesc": "Berdayakan fakultas, staf, dan siswa Anda dengan alat yang intuitif.",
+    "optimizeTitle": "Optimalkan",
+    "optimizeDesc": "Optimalkan teknologi Anda dengan wawasan data dan manajemen sederhana.",
+    "protectTitle": "Lindungi",
+    "protectDesc": "Lindungi data Anda dengan infrastruktur yang aman, terukur, dan patuh."
+  },
+  "features": {
+    "collaboration": "Kolaborasi dan produktivitas",
+    "classroom": "Manajemen kelas dan deteksi plagiarisme",
+    "email": "Email dan pesan",
+    "storage": "Penyimpanan",
+    "video": "Konferensi video",
+    "hardware": "Perangkat Keras & OS",
+    "ai": "AI",
+    "apps": {
+      "docs": "Docs",
+      "sheets": "Sheets",
+      "slides": "Slides",
+      "forms": "Forms",
+      "sites": "Sites",
+      "calendar": "Calendar",
+      "appsheet": "AppSheet Core",
+      "vids": "Vids",
+      "assignments": "Assignments",
+      "originality": "Laporan Orisinalitas",
+      "workspaceLTI": "Workspace LTI™",
+      "classroom": "Classroom",
+      "gmail": "Gmail",
+      "chat": "Chat",
+      "groups": "Groups",
+      "drive": "Drive",
+      "meet": "Meet",
+      "chrome": "chrome",
+      "chromebook": "chromebook plus",
+      "notebookLM": "NotebookLM",
+      "gemini": "Gemini"
+    }
+  },
+  "footer": {
+    "tagline": "Memberdayakan pendidikan melalui teknologi inovatif dan solusi berbasis AI.",
+    "product": "Produk",
+    "features": "Fitur",
+    "pricing": "Harga",
+    "security": "Keamanan",
+    "updates": "Pembaruan",
+    "resources": "Sumber Daya",
+    "documentation": "Dokumentasi",
+    "helpCenter": "Pusat Bantuan",
+    "blog": "Blog",
+    "community": "Komunitas",
+    "connect": "Terhubung",
+    "copyright": "© 2025 EduTech. Hak cipta dilindungi undang-undang.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Layanan",
+    "cookies": "Kebijakan Cookie"
+  }
+}

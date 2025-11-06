@@ -1,0 +1,73 @@
+{
+  "header": {
+    "title": "EduTech",
+    "signIn": "Sign In",
+    "getStarted": "Get Started",
+    "workspace": "Google Workspace for Education",
+    "cloud": "Google Cloud",
+    "gemini": "+ Gemini"
+  },
+  "main": {
+    "title_line1": "A full-stack education",
+    "title_line2": "technology solution",
+    "experience": "Experience: Collaboration and productivity"
+  },
+  "sidebar": {
+    "empowerTitle": "Empower",
+    "empowerDesc": "Empower your faculty, staff, and students with intuitive tools.",
+    "optimizeTitle": "Optimize",
+    "optimizeDesc": "Optimize your tech with data insights and simple management.",
+    "protectTitle": "Protect",
+    "protectDesc": "Protect your data with secure, scalable, and compliant infrastructure."
+  },
+  "features": {
+    "collaboration": "Collaboration and productivity",
+    "classroom": "Classroom management and plagiarism detection",
+    "email": "Email and messaging",
+    "storage": "Storage",
+    "video": "Video conferencing",
+    "hardware": "Hardware & OS",
+    "ai": "AI",
+    "apps": {
+      "docs": "Docs",
+      "sheets": "Sheets",
+      "slides": "Slides",
+      "forms": "Forms",
+      "sites": "Sites",
+      "calendar": "Calendar",
+      "appsheet": "AppSheet Core",
+      "vids": "Vids",
+      "assignments": "Assignments",
+      "originality": "Originality reports",
+      "workspaceLTI": "Workspace LTI™",
+      "classroom": "Classroom",
+      "gmail": "Gmail",
+      "chat": "Chat",
+      "groups": "Groups",
+      "drive": "Drive",
+      "meet": "Meet",
+      "chrome": "chrome",
+      "chromebook": "chromebook plus",
+      "notebookLM": "NotebookLM",
+      "gemini": "Gemini"
+    }
+  },
+  "footer": {
+    "tagline": "Empowering education through innovative technology and AI-driven solutions.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "security": "Security",
+    "updates": "Updates",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "helpCenter": "Help Center",
+    "blog": "Blog",
+    "community": "Community",
+    "connect": "Connect",
+    "copyright": "© 2025 EduTech. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  }
+}
